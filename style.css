@@ -5,7 +5,7 @@ body{
     padding: 7px;
     font-size: 20px;
     color: black;
-	background-image: url('img/bg.jpeg');
+	background-image: url('bg.jpeg');
 }
 .header{
     display: flex;
