@@ -1,0 +1,226 @@
+/*CSS reset*/
+body{
+	height: 100%;
+    margin: 14px;
+    padding: 7px;
+    font-size: 20px;
+    color: black;
+	background-image: url('img/bg.jpeg');
+}
+.header{
+    display: flex;
+    align-items: center;
+	position: sticky;
+	top: 0px;
+}
+
+.header::before{
+	content: "";
+	background-color: lightblue;
+	position: absolute;
+	top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar{
+	
+    display: flex;
+	top: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
+	font-size: 2.3em;
+	/*text-align: center;
+	text-justify: center;*/
+    
+}
+.logo img{
+    height: 60px;
+    width: 94px;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+.nav li a{
+	color: black;
+    text-decoration: none;
+    text-decoration-style: none;
+    display: inline;
+	padding: 10px;
+	margin: 10px;
+}
+.nav li a:hover,.nav li a.active {
+    text-decoration: none;
+    color: red;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+.dropdown li{
+	display: block;
+}
+
+.dropdown .dropbtn {
+	text-align: center;
+	font-size: 20px;  
+	border: none;
+  	outline: none;
+  	color: black;
+  	padding: 0px 25px;
+  	background-color: inherit;
+  	margin: 0px;
+}
+
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+	margin: 5px;
+ 	z-index: 1;
+}
+
+.dropdown-content a {
+	font-size: 20px;
+  	float: none;
+  	color: black;
+ 	padding: 10px 10px;
+	text-decoration: none;
+ 	display: flex;
+ 	text-align: left;
+}
+
+.dropdown-content a:hover {
+  	color: red;
+}
+
+.dropdown:hover .dropdown-content {
+  	display: block;
+	color: black;
+}
+
+.right{
+	display: inline-block;
+	position: absolute;
+	right: 30px;
+	top: 17px;
+	
+}
+
+.btn{
+	position: relative;
+	margin: 0px 5px;
+    color: red;
+    padding: 3px 12px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+	text-decoration: none;
+	text-decoration-style: none;
+	transition: all 0.5s ease-in-out;
+}
+.btn a{
+	color: black;
+	text-decoration: none;
+	text-decoration-style: none;
+}
+.btn:hover{
+	transform: scale(1.1);
+	text-decoration: none;
+	background-color:rgba(219, 41, 41, 0.68);
+}
+/*
+#home{
+    display:block;
+    font-size: 15px;
+	margin: 10px 10px;
+	padding: 10px 10px;
+	text-align: center;
+}
+*/
+.home{
+	height: 500px;
+	width: 1100px;
+    display:flex;
+	flex-direction: row;
+    font-size: 16px;
+	margin: 10px 10px;
+	padding: 10px 10px;
+	background:rgba(255, 255, 255, 0.68);
+	text-align: justify;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+.h-primary{
+	display: flex;
+	margin: 5px;
+	padding: 5px;
+	font-size: 1.5rem;
+}
+.h-primary p{
+	padding: 10px;
+	margin: 10px;
+}
+.synopsis{
+	height: 185px;
+	width: 400px;
+	display: inline;
+	border: 2px solid red;
+	border-radius: 5px;
+	padding: 5px;
+	transition: all 0.5s ease-in;
+}
+.synopsis:hover{
+	transform: scale(1.05);
+}
+.lmq{
+	height: 210px;
+	width: 407px;
+	animation-name: mcqueen;
+	animation-duration:2s;
+	position: relative;
+	animation-iteration-count:infinite ;
+	animation-timing-function: ease-in-out;
+	animation-direction: reverse;
+}
+@keyframes mcqueen{
+	0%{
+		left: 0px;
+	}
+	/*25%{
+		left: 73px;
+	}
+	50%{
+		left: 146px;
+	}
+	75%{
+		left: 219px;
+	}*/
+	100%{
+		left: 292px;
+	}
+}
+
+.plot{
+	border: 2px solid red;
+	border-radius: 5px;
+	padding: 5px;
+    margin: 5px;
+}
